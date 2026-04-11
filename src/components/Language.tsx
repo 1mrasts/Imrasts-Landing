@@ -1,0 +1,35 @@
+import type { Dispatch, SetStateAction } from 'react'
+import styles from './Language.module.scss'
+
+export function Language({
+	lang,
+	setLang,
+}: {
+	lang: 'ru' | 'en'
+	setLang: Dispatch<SetStateAction<'en' | 'ru'>>
+}) {
+	return (
+		<div className={styles['language__wrapper']}>
+			<div className={styles.language}>
+				<div
+					className={styles['language__select']}
+					style={{
+						transform: `translateX(${lang == 'ru' ? '0px' : '85px'})`,
+					}}
+				></div>
+				<div
+					onClick={() => setLang('ru')}
+					className={styles['language__block']}
+				>
+					<h6>RU</h6>
+				</div>
+				<div
+					onClick={() => setLang('en')}
+					className={styles['language__block']}
+				>
+					<h6>EN</h6>
+				</div>
+			</div>
+		</div>
+	)
+}

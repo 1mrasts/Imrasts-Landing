@@ -1,0 +1,52 @@
+{
+	"hi": "Привет",
+	"i": "Я Imrasts",
+	"frontend": "Front-end",
+	"developer": "Разработчик",
+
+	"about": "Обо мне",
+
+	"website_development": "Веб-Разработка",
+	"wd_first": "Лендинги и бизнес-сайты",
+	"wd_second": "Коммерческие решения",
+	"wd_third": "Полностью адаптивный дизайн",
+	"wd_fourth": "Чистый и масштабируемый код",
+
+	"frontend_experience": "Опыт Frontend-разработки",
+	"fe_first": "Адаптивные макеты",
+	"fe_second": "Интерактивные элементы",
+	"fe_third": "Плавные анимации",
+	"fe_fourth": "Чистая реализация UI",
+
+	"performance_and_optimization": "Производительность и оптимизация",
+	"po_first": "Быстрая загрузка",
+	"po_second": "Оптимизация кода",
+	"po_third": "Структура, готовая к SEO",
+	"po_fourth": "Настройка кэширования и производительности",
+
+	"interactive_experience": "Интерактивный опыт",
+	"ie_first": "Увлекающее взаимодействие с пользователем",
+	"ie_second": "Плавные переходы",
+	"ie_third": "Динамические компоненты",
+	"ie_fourth": "Современные фронтенд-эффекты",
+
+	"tech_stack": "Стек технологий",
+
+	"interfaces": "Интерфейсы (Front-end)",
+	"i_first": "HTML5 / CSS",
+	"i_second": "JavaScript / TypeScript",
+	"i_third": "React / React Router / Redux",
+	"i_fourth": "SCSS / Tailwind CSS",
+
+	"tools": "Инструменты",
+	"t_first:": "VS Code",
+	"t_second": "Figma",
+	"t_third": "Git / Github",
+
+	"portfolio": "Портфолио",
+	"nft": "NFT-Marketplace-Landing",
+	"payday": "Payday-App",
+	"todo": "Todo-App-With-Redux",
+
+	"contacts": "Контакты"
+}

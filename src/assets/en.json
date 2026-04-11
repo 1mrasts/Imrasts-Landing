@@ -1,0 +1,52 @@
+{
+	"hi": "Hi",
+	"i": "I am imrasts",
+	"frontend": "Front-end",
+	"developer": "Developer",
+
+	"about": "About me",
+
+	"website_development": "Website Development",
+	"wd_first": "Landing pages & business website",
+	"wd_second": "E-commerce solutions",
+	"wd_third": "Fully responsive design",
+	"wd_fourth": "Clean and scalable code",
+
+	"frontend_experience": "Frontend Experience",
+	"fe_first": "Responsive layouts",
+	"fe_second": "Interactive elements",
+	"fe_third": "Smooth animations",
+	"fe_fourth": "Clean UI implementation",
+
+	"performance_and_optimization": "Performance & Optimization",
+	"po_first": "Fast loading speed",
+	"po_second": "Code optimization",
+	"po_third": "SEO-ready structure",
+	"po_fourth": "Caching & performance setup",
+
+	"interactive_experience": "Interactive Experience",
+	"ie_first": "Engaging user interactions",
+	"ie_second": "Smooth transitions",
+	"ie_third": "Dynamic components",
+	"ie_fourth": "Modern frontend effects",
+
+	"tech_stack": "Tech Stack",
+
+	"interfaces": "Interfaces (Front-end)",
+	"i_first": "HTML5 / CSS",
+	"i_second": "JavaScript / TypeScript",
+	"i_third": "React / React Router / Redux",
+	"i_fourth": "SCSS / Tailwind CSS",
+
+	"tools": "Tools",
+	"t_first:": "VS Code",
+	"t_second": "Figma",
+	"t_third": "Git / Github",
+
+	"portfolio": "Portfolio",
+	"nft": "NFT-Marketplace-Landing",
+	"payday": "Payday-App",
+	"todo": "Todo-App-With-Redux",
+
+	"contacts": "Contacts"
+}
