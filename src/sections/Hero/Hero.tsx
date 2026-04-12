@@ -1,5 +1,5 @@
-import type { TTranslation } from '../App'
-import abstract from '../assets/Hero/abstract.png'
+import type { TTranslation } from '../../App'
+import abstract from '../../assets/Hero/abstract.png'
 import styles from './Hero.module.scss'
 
 export function Hero({
@@ -22,7 +22,7 @@ export function Hero({
 				src={abstract}
 				alt=''
 				style={{
-					transform: `rotate(${typeOfLang == 'ru' ? '-110deg' : '-140deg'})`,
+					transform: `rotate(${typeOfLang == 'ru' ? '240deg' : '220deg'})`,
 					bottom: `${typeOfLang == 'ru' ? '70px' : '100px'}`,
 					right: `${typeOfLang == 'ru' ? '-50px' : '0px'}`,
 				}}
