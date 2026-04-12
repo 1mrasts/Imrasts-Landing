@@ -5,6 +5,7 @@ import ru from './assets/ru.json'
 import { Language } from './components/Language'
 import { AboutMe } from './sections/AboutMe/AboutMe'
 import { Hero } from './sections/Hero/Hero'
+import { TechStack } from './sections/Tech Stack/TechStack'
 import './styles/styles.scss'
 
 export type TTranslation = typeof en
@@ -21,6 +22,7 @@ function App() {
 			<Hero lang={translations[lang]} typeOfLang={lang} />
 			<AboutMe lang={translations[lang]} />
 			<img className='abstract' src={abstract} alt='' />
+			<TechStack lang={translations[lang]} />
 		</>
 	)
 }
