@@ -3,16 +3,4 @@
 	width: 100%;
 	flex-direction: column;
 	gap: 10px;
-
-	&__title {
-		display: flex;
-		flex-direction: row;
-		gap: 10px;
-		align-items: center;
-	}
-	&__cardlist {
-		display: flex;
-		flex-direction: column;
-		gap: 15px;
-	}
 }

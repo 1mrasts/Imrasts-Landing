@@ -8,11 +8,11 @@ import styles from './AboutMe.module.scss'
 export function AboutMe({ lang }: { lang: TTranslation }) {
 	return (
 		<section className={`${styles.aboutme} mt-150`}>
-			<div className={styles['aboutme__title']}>
+			<div className='title'>
 				<img src={accessibility} alt='' />
 				<h4>{lang.about}</h4>
 			</div>
-			<div className={styles['aboutme__cardlist']}>
+			<div className='cardlist'>
 				<div className='card'>
 					<div className='card-title'>
 						<div className='card-logo'>
