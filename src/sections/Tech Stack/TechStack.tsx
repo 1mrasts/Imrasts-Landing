@@ -35,7 +35,7 @@ export function TechStack({ lang }: { lang: TTranslation }) {
 						</li>
 					</ul>
 				</div>
-				<div className='card card_text--big'>
+				<div className='card'>
 					<div className='card-title'>
 						<div className='card-logo'>
 							<img src={tools} alt='' />
