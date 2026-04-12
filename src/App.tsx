@@ -16,7 +16,7 @@ function App() {
 	return (
 		<>
 			<Language lang={lang} setLang={setLang} />
-			<Hero lang={translations[lang]} />
+			<Hero lang={translations[lang]} typeOfLang={lang} />
 		</>
 	)
 }
