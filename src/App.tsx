@@ -5,6 +5,7 @@ import ru from './assets/ru.json'
 import { Language } from './components/Language'
 import { AboutMe } from './sections/AboutMe/AboutMe'
 import { Hero } from './sections/Hero/Hero'
+import { Portfolio } from './sections/Portfolio/Portfolio'
 import { TechStack } from './sections/Tech Stack/TechStack'
 import './styles/styles.scss'
 
@@ -23,6 +24,7 @@ function App() {
 			<AboutMe lang={translations[lang]} />
 			<img className='abstract' src={abstract} alt='' />
 			<TechStack lang={translations[lang]} />
+			<Portfolio lang={translations[lang]} />
 		</>
 	)
 }
