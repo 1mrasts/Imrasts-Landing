@@ -7,6 +7,9 @@ body {
 	background-color: #1a1a1a;
 	padding: 32px 15px;
 	overflow-x: clip;
+	@media (min-width: 1000px) {
+		padding: 32px 150px;
+	}
 }
 ul {
 	margin: 0;
@@ -86,4 +89,17 @@ ul {
 	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#adaptive-show {
+	display: none;
+	@media (min-width: 1000px) {
+		display: block;
+	}
+}
+#adaptive-hide {
+	display: block;
+	@media (min-width: 1000px) {
+		display: none;
+	}
 }

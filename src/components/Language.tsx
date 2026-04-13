@@ -16,7 +16,7 @@ export function Language({
 					className={styles['language__select']}
 					style={{
 						transform:
-							width >= 700
+							width >= 1000
 								? `translateX(${lang == 'ru' ? '0px' : '98px'})`
 								: `translateX(${lang == 'ru' ? '0px' : '85px'})`,
 					}}

@@ -1,5 +1,6 @@
 import type { TTranslation } from '../../App'
 import abstract from '../../assets/Hero/abstract.png'
+import abstract2 from '../../assets/Hero/developer.png'
 import link from '../../assets/Hero/hi.svg'
 import styles from './Hero.module.scss'
 
@@ -21,6 +22,12 @@ export function Hero({
 			</h5>
 			<h2>{lang.frontend}</h2>
 			<h1>{lang.developer}</h1>
+			<img
+				className={styles.developer}
+				id='adaptive-show'
+				src={abstract2}
+				alt=''
+			/>
 			<img
 				className={styles.abstract}
 				src={abstract}
