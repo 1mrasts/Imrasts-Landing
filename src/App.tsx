@@ -4,6 +4,7 @@ import en from './assets/en.json'
 import ru from './assets/ru.json'
 import { Language } from './components/Language'
 import { AboutMe } from './sections/AboutMe/AboutMe'
+import { Contacts } from './sections/Contacts/Contacts'
 import { Hero } from './sections/Hero/Hero'
 import { Portfolio } from './sections/Portfolio/Portfolio'
 import { TechStack } from './sections/Tech Stack/TechStack'
@@ -25,6 +26,7 @@ function App() {
 			<img className='abstract' src={abstract} alt='' />
 			<TechStack lang={translations[lang]} />
 			<Portfolio lang={translations[lang]} />
+			<Contacts lang={translations[lang]} />
 		</>
 	)
 }
