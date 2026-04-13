@@ -1,5 +1,6 @@
 import type { TTranslation } from '../../App'
 import abstract from '../../assets/Hero/abstract.png'
+import link from '../../assets/Hero/hi.svg'
 import styles from './Hero.module.scss'
 
 export function Hero({
@@ -11,7 +12,10 @@ export function Hero({
 }) {
 	return (
 		<section className={`${styles.hero} mt-100`}>
-			<h2>{lang.hi}</h2>
+			<div className={styles.title}>
+				<h2>{lang.hi}</h2>
+				<img src={link} alt='' />
+			</div>
 			<h5>
 				{lang.i} <span>{lang.nickname}</span>
 			</h5>

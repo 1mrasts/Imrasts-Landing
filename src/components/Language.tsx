@@ -8,13 +8,17 @@ export function Language({
 	lang: 'ru' | 'en'
 	setLang: Dispatch<SetStateAction<'en' | 'ru'>>
 }) {
+	const width = window.innerWidth
 	return (
 		<div className={styles['language__wrapper']}>
 			<div className={styles.language}>
 				<div
 					className={styles['language__select']}
 					style={{
-						transform: `translateX(${lang == 'ru' ? '0px' : '85px'})`,
+						transform:
+							width >= 700
+								? `translateX(${lang == 'ru' ? '0px' : '98px'})`
+								: `translateX(${lang == 'ru' ? '0px' : '85px'})`,
 					}}
 				></div>
 				<div
