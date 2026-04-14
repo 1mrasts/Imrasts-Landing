@@ -44,10 +44,16 @@
 	z-index: -1;
 
 	@media (min-width: 1000px) {
-		transform: rotate(0) !important;
+		transform: translate(300px) !important;
 
 		max-width: 579px !important;
-		bottom: 0px !important;
+		bottom: -50px !important;
+	}
+	@media (min-width: 1190px) {
+		transform: translate(150px) !important;
+	}
+	@media (min-width: 1300px) {
+		transform: translate(0px) !important;
 	}
 }
 .developer {

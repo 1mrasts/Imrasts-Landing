@@ -11,6 +11,9 @@
 		img {
 			max-width: 326px;
 			margin: 0px auto 0px auto;
+			@media (min-width: 1100px) {
+				max-width: 1126px;
+			}
 		}
 	}
 }
@@ -25,9 +28,16 @@
 		max-width: 35px;
 		max-height: 35px;
 		margin: 0 0 0 0;
+		@media (min-width: 1100px) {
+			max-width: 50px;
+			max-height: 50px;
+		}
 	}
 
 	h5 {
 		font-size: 24px;
+		@media (min-width: 1100px) {
+			font-size: 48px;
+		}
 	}
 }

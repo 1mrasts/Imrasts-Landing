@@ -4,11 +4,12 @@ import styles from './Language.module.scss'
 export function Language({
 	lang,
 	setLang,
+	width,
 }: {
 	lang: 'ru' | 'en'
 	setLang: Dispatch<SetStateAction<'en' | 'ru'>>
+	width: number
 }) {
-	const width = window.innerWidth
 	return (
 		<div className={styles['language__wrapper']}>
 			<div className={styles.language}>

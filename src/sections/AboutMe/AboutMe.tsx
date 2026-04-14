@@ -7,13 +7,16 @@ import styles from './AboutMe.module.scss'
 
 export function AboutMe({ lang }: { lang: TTranslation }) {
 	return (
-		<section className={`${styles.aboutme} mt-150`}>
+		<div className={`${styles.aboutme} mt-150`}>
 			<div className='title'>
 				<img src={accessibility} alt='' />
 				<h4>{lang.about}</h4>
 			</div>
+			<div id='adaptive-show' className='callout'>
+				<p>{lang.phrase_about_me}</p>
+			</div>
 			<div className='cardlist'>
-				<div className='card'>
+				<div className='card card--big'>
 					<div className='card-title'>
 						<div className='card-logo'>
 							<img src={upload_file} alt='' />
@@ -99,6 +102,6 @@ export function AboutMe({ lang }: { lang: TTranslation }) {
 					</ul>
 				</div>
 			</div>
-		</section>
+		</div>
 	)
 }

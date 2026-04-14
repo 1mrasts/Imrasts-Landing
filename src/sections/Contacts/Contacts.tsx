@@ -1,14 +1,21 @@
 import type { TTranslation } from '../../App'
-import abstact from '../../assets/Contacts/Abstract.png'
+import abstractBig from '../../assets/Contacts/Abstract-big.png'
+import abstract from '../../assets/Contacts/Abstract.png'
 import contacts from '../../assets/Contacts/contacts.svg'
 import github from '../../assets/Contacts/github.svg'
 import mailru from '../../assets/Contacts/mailru.svg'
 import telegram from '../../assets/Contacts/telegram.svg'
 import styles from './Contacts.module.scss'
 
-export function Contacts({ lang }: { lang: TTranslation }) {
+export function Contacts({
+	width,
+	lang,
+}: {
+	width: number
+	lang: TTranslation
+}) {
 	return (
-		<section className={`${styles.contacts} mt-150`}>
+		<div className={`${styles.contacts} mt-200 mb-200`}>
 			<div className={styles['abstract__wrapper']}>
 				<div className='card card-horiz'>
 					<div className='card-title'>
@@ -29,8 +36,12 @@ export function Contacts({ lang }: { lang: TTranslation }) {
 						</a>
 					</div>
 				</div>
-				<img className={styles['abstract']} src={abstact} alt='' />
+				<img
+					className={styles['abstract']}
+					src={width < 1100 ? abstract : abstractBig}
+					alt=''
+				/>
 			</div>
-		</section>
+		</div>
 	)
 }

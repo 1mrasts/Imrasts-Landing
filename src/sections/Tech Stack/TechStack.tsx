@@ -6,10 +6,13 @@ import styles from './TechStack.module.scss'
 
 export function TechStack({ lang }: { lang: TTranslation }) {
 	return (
-		<section className={`${styles.techstack}`}>
+		<div className={`${styles.techstack}`}>
 			<div className='title'>
 				<img src={engineering} alt='' />
 				<h4>{lang.tech_stack}</h4>
+			</div>
+			<div id='adaptive-show' className='callout'>
+				<p>{lang.phrase_tech_stack}</p>
 			</div>
 			<div className='cardlist'>
 				<div className='card'>
@@ -56,6 +59,6 @@ export function TechStack({ lang }: { lang: TTranslation }) {
 					</ul>
 				</div>
 			</div>
-		</section>
+		</div>
 	)
 }

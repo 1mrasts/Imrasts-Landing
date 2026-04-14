@@ -7,12 +7,14 @@ import styles from './Hero.module.scss'
 export function Hero({
 	lang,
 	typeOfLang,
+	width,
 }: {
 	lang: TTranslation
 	typeOfLang: 'ru' | 'en'
+	width: number
 }) {
 	return (
-		<section className={`${styles.hero} mt-100`}>
+		<div className={`${styles.hero} mt-150`}>
 			<div className={styles.title}>
 				<h2>{lang.hi}</h2>
 				<img src={link} alt='' />
@@ -35,9 +37,9 @@ export function Hero({
 				style={{
 					transform: `rotate(${typeOfLang == 'ru' ? '240deg' : '220deg'})`,
 					bottom: `${typeOfLang == 'ru' ? '70px' : '100px'}`,
-					right: `${typeOfLang == 'ru' ? '-50px' : '0px'}`,
+					right: `${typeOfLang == 'ru' && width < 1000 ? '-50px' : '0px'}`,
 				}}
 			/>
-		</section>
+		</div>
 	)
 }
