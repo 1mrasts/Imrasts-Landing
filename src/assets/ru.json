@@ -49,5 +49,9 @@
 	"payday": "Payday-App",
 	"todo": "Todo-App-With-Redux",
 
-	"contacts": "Контакты"
+	"contacts": "Контакты",
+
+	"phrase_about_me": "Я создаю быстрые и удобные сайты для бизнес-задач",
+	"phrase_tech_stack": "Технологии, на которых создаются ваши сайты",
+	"phrase_portfolio": "Проекты, которые рассказывают мою историю"
 }
