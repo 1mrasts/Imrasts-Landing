@@ -15,7 +15,7 @@ export function Contacts({
 	lang: TTranslation
 }) {
 	return (
-		<div className={`${styles.contacts} mt-200 mb-200`}>
+		<div className={`${styles.contacts} mt-250 mb-200`}>
 			<div className={styles['abstract__wrapper']}>
 				<div className='card card-horiz'>
 					<div className='card-title'>

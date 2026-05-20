@@ -7,6 +7,7 @@ import { Language } from './components/Language'
 import { AboutMe } from './sections/AboutMe/AboutMe'
 import { Contacts } from './sections/Contacts/Contacts'
 import { Hero } from './sections/Hero/Hero'
+import { Message } from './sections/Message/Message'
 import { Portfolio } from './sections/Portfolio/Portfolio'
 import { TechStack } from './sections/Tech Stack/TechStack'
 import './styles/styles.scss'
@@ -22,27 +23,28 @@ function App() {
 	const [width, setWidth] = useState(window.innerWidth)
 	const observer = useRef<IntersectionObserver | null>(null) // Постоянно держим observer
 
-	// Следим за элементами
+	// Следим за элементами с классом .observe и добавляем им .visible при появлении на экране
 	useEffect(() => {
+		// Создаём IntersectionObserver — он отслеживает появление элементов в области просмотра
 		observer.current = new IntersectionObserver(
-			entry => {
-				entry.forEach(entry => {
+			entries => {
+				entries.forEach(entry => {
 					if (entry.isIntersecting) {
-						entry.target.classList.add('visible') // Добавляем элементу в диапазоне видимости класс
-						observer.current?.unobserve(entry.target) // отключаем наблюдение за текущим элементом
+						entry.target.classList.add('visible') // Когда элемент появляется — добавляем ему класс visible
+						observer.current?.unobserve(entry.target) // После срабатывания отключаем наблюдение за этим элементом
 					}
 				})
 			},
-			{ threshold: 0.4 }, // 40% от объекта должно быть на экране
+			{ threshold: 0.4 }, // Элемент считается видимым, когда хотя бы 40% его площади на экране
 		)
 
-		// Находим все .observe элементы и к каждому навешиваем слежку
+		// Находим все элементы с классом .observe и подписываем их на наблюдение
 		document.querySelectorAll('.observe').forEach(el => {
 			observer.current?.observe(el)
 		})
 
 		return () => {
-			observer.current?.disconnect() // Очень важно сделать
+			observer.current?.disconnect() // При размонтировании компонента отключаем observer, чтобы не было утечек памяти
 		}
 	}, [])
 
@@ -74,6 +76,9 @@ function App() {
 			</section>
 			<section className='observe'>
 				<Portfolio width={width} lang={translations[lang]} />
+			</section>
+			<section className='observe'>
+				<Message lang={translations[lang]} />
 			</section>
 			<section className='observe'>
 				<Contacts width={width} lang={translations[lang]} />

@@ -11,10 +11,10 @@ export function Language({
 	width: number
 }) {
 	return (
-		<div className={styles['language__wrapper']}>
+		<div className={styles['language__container']}>
 			<div className={styles.language}>
 				<div
-					className={styles['language__select']}
+					className={styles['language__slider']}
 					style={{
 						transform:
 							width >= 1000
@@ -24,13 +24,13 @@ export function Language({
 				></div>
 				<div
 					onClick={() => setLang('ru')}
-					className={styles['language__block']}
+					className={styles['language__option']}
 				>
 					<h6>RU</h6>
 				</div>
 				<div
 					onClick={() => setLang('en')}
-					className={styles['language__block']}
+					className={styles['language__option']}
 				>
 					<h6>EN</h6>
 				</div>
