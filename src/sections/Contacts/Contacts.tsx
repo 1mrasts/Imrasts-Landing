@@ -25,7 +25,7 @@ export function Contacts({
 						<h5>{lang.contacts}</h5>
 					</div>
 					<div className={styles['contacts__list']}>
-						<a href='https://t.me/l0ne1ys'>
+						<a href='https://t.me/Imrasts'>
 							<img src={telegram} alt='' />
 						</a>
 						<a href='https://github.com/1mrasts'>
