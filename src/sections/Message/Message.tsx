@@ -51,13 +51,16 @@ export function Message({ lang }: { lang: TTranslation }) {
 					}
 				>
 					<div className={`${styles['chat__avatar']}`}></div>
-					<span>&nbsp; {textMessage}</span>
+					<span>{textMessage}</span>
 				</div>
 				<div className={`${styles['chat__input-wrapper']}`}>
 					<div className={`${styles['chat__input']}`}>
 						<p>{message}</p>
 					</div>
-					<div className={`${styles['chat__button']}`}>
+					<div
+						onClick={() => window.open('https://t.me/Imrasts', '_blank')}
+						className={`${styles['chat__button']}`}
+					>
 						<img src={send} alt='' />
 					</div>
 				</div>
