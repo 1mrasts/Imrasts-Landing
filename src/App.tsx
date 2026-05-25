@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import abstractBig from './assets/abstract-1-big.png'
 import abstract from './assets/abstract-1.png'
-import en from './assets/en.json'
-import ru from './assets/ru.json'
-import { Language } from './components/Language'
+import en from './assets/data/en.json'
+import ru from './assets/data/ru.json'
+import { Language } from './components/Language/Language'
 import { AboutMe } from './sections/AboutMe/AboutMe'
 import { Contacts } from './sections/Contacts/Contacts'
 import { Hero } from './sections/Hero/Hero'
@@ -35,7 +35,7 @@ function App() {
 					}
 				})
 			},
-			{ threshold: 0.4 }, // Элемент считается видимым, когда хотя бы 40% его площади на экране
+			{ threshold: 0.3 }, // Элемент считается видимым, когда хотя бы 30% его площади на экране
 		)
 
 		// Находим все элементы с классом .observe и подписываем их на наблюдение
@@ -74,7 +74,7 @@ function App() {
 			<section className='observe'>
 				<TechStack lang={translations[lang]} />
 			</section>
-			<section className='observe'>
+			<section>
 				<Portfolio width={width} lang={translations[lang]} />
 			</section>
 			<section className='observe'>
