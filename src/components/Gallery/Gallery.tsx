@@ -8,7 +8,7 @@ import styles from './Gallery.module.scss'
 export function Gallery({
 	projectName,
 }: {
-	projectName: 'nft' | 'payday-app' | 'todo-app'
+	projectName: 'nft' | 'payday-app' | 'todo-app' | 'sertexity'
 }) {
 	const galleryData: galleryInfoType = gallery[projectName]
 	const [currentSlide, setCurrentSlide] = useState<number>(0)

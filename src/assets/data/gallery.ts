@@ -16,6 +16,12 @@ import todoScreen3 from '../Portfolio/Gallery/Todo/screen3.png'
 import todoScreen4 from '../Portfolio/Gallery/Todo/screen4.png'
 import todoScreen5 from '../Portfolio/Gallery/Todo/screen5.png'
 
+import sertexityScreen1 from '../Portfolio/Gallery/Sertexity/screen1.png'
+import sertexityScreen2 from '../Portfolio/Gallery/Sertexity/screen2.png'
+import sertexityScreen3 from '../Portfolio/Gallery/Sertexity/screen3.png'
+import sertexityScreen4 from '../Portfolio/Gallery/Sertexity/screen4.png'
+import sertexityScreen5 from '../Portfolio/Gallery/Sertexity/screen5.png'
+
 export const gallery: galleryType = {
 	nft: {
 		name: 'NFT-Marketplace-Landing',
@@ -28,5 +34,15 @@ export const gallery: galleryType = {
 	'todo-app': {
 		name: 'Todo-App-With-Redux',
 		urls: [todoScreen1, todoScreen2, todoScreen3, todoScreen4, todoScreen5],
+	},
+	sertexity: {
+		name: 'Sertexity site',
+		urls: [
+			sertexityScreen1,
+			sertexityScreen2,
+			sertexityScreen3,
+			sertexityScreen4,
+			sertexityScreen5,
+		],
 	},
 }

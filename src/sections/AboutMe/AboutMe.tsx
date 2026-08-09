@@ -9,7 +9,7 @@ export function AboutMe({ lang }: { lang: TTranslation }) {
 	return (
 		<div className={`${styles.aboutme} mt-150`}>
 			<div className='title'>
-				<img src={accessibility} alt='' />
+				<img src={accessibility} alt='person logo' />
 				<h4>{lang.about}</h4>
 			</div>
 			<div id='adaptive-show' className='callout'>
@@ -19,7 +19,7 @@ export function AboutMe({ lang }: { lang: TTranslation }) {
 				<div className='card card--big'>
 					<div className='card-title'>
 						<div className='card-logo'>
-							<img src={upload_file} alt='' />
+							<img src={upload_file} alt='website development logo' />
 						</div>
 						<h5>{lang.website_development}</h5>
 					</div>
@@ -58,7 +58,7 @@ export function AboutMe({ lang }: { lang: TTranslation }) {
 				<div className='card'>
 					<div className='card-title'>
 						<div className='card-logo'>
-							<img src={settings} alt='' />
+							<img src={settings} alt='performance logo' />
 						</div>
 						<h5>{lang.performance_and_optimization}</h5>
 					</div>
@@ -81,7 +81,7 @@ export function AboutMe({ lang }: { lang: TTranslation }) {
 				<div className='card'>
 					<div className='card-title'>
 						<div className='card-logo'>
-							<img src={replay} alt='' />
+							<img src={replay} alt='interactive logo' />
 						</div>
 						<h5>{lang.interactive_experience}</h5>
 					</div>

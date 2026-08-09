@@ -8,7 +8,7 @@ export function TechStack({ lang }: { lang: TTranslation }) {
 	return (
 		<div className={`${styles.techstack}`}>
 			<div className='title'>
-				<img src={engineering} alt='' />
+				<img src={engineering} alt='Engineer with gears' />
 				<h4>{lang.tech_stack}</h4>
 			</div>
 			<div id='adaptive-show' className='callout'>
@@ -18,7 +18,7 @@ export function TechStack({ lang }: { lang: TTranslation }) {
 				<div className='card'>
 					<div className='card-title'>
 						<div className='card-logo'>
-							<img src={web} alt='' />
+							<img src={web} alt='Website interface layout' />
 						</div>
 						<h5>{lang.interfaces}</h5>
 					</div>
@@ -41,7 +41,7 @@ export function TechStack({ lang }: { lang: TTranslation }) {
 				<div className='card'>
 					<div className='card-title'>
 						<div className='card-logo'>
-							<img src={tools} alt='' />
+							<img src={tools} alt='Pencil tool' />
 						</div>
 						<h5>{lang.tools}</h5>
 					</div>

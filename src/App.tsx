@@ -70,7 +70,7 @@ function App() {
 				<img
 					className='abstract'
 					src={width < 1100 ? abstract : abstractBig}
-					alt=''
+					alt='abstraction'
 				/>
 			</section>
 			<section className='observe'>

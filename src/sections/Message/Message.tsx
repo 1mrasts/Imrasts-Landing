@@ -61,7 +61,7 @@ export function Message({ lang }: { lang: TTranslation }) {
 						onClick={() => window.open('https://t.me/Imrasts', '_blank')}
 						className={`${styles['chat__button']}`}
 					>
-						<img src={send} alt='' />
+						<img src={send} alt='Send message via Telegram' />
 					</div>
 				</div>
 			</div>

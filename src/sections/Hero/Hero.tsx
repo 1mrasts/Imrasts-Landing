@@ -17,7 +17,7 @@ export function Hero({
 		<div className={`${styles.hero} mt-150`}>
 			<div className={styles.title}>
 				<h2>{lang.hi}</h2>
-				<img src={link} alt='' />
+				<img src={link} alt='Arrow pointing up and to the right' />
 			</div>
 			<h5>
 				{lang.i} <span>{lang.nickname}</span>
@@ -28,12 +28,12 @@ export function Hero({
 				className={styles.developer}
 				id='adaptive-show'
 				src={abstract2}
-				alt=''
+				alt='Abstract dark circular shape'
 			/>
 			<img
 				className={styles.abstract}
 				src={abstract}
-				alt=''
+				alt='Abstract composition of blue and dark circles'
 				style={{
 					transform: `rotate(${typeOfLang == 'ru' ? '240deg' : '220deg'})`,
 					bottom: `${typeOfLang == 'ru' ? '70px' : '100px'}`,

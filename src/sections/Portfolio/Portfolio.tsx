@@ -1,6 +1,7 @@
 import type { TTranslation } from '../../App'
 import nft from '../../assets/Portfolio/nft.svg'
 import payday from '../../assets/Portfolio/payday.svg'
+import sertexity from '../../assets/Portfolio/sertexity.svg'
 import todo from '../../assets/Portfolio/todo.svg'
 import topic from '../../assets/Portfolio/topic.svg'
 import { Gallery } from '../../components/Gallery/Gallery'
@@ -11,7 +12,7 @@ export function Portfolio({ lang }: { width: number; lang: TTranslation }) {
 		<div className={`${styles.portfolio} mt-100`}>
 			<div>
 				<div className='title'>
-					<img src={topic} alt='' />
+					<img src={topic} alt='Portfolio folder icon' />
 					<h4>{lang.portfolio}</h4>
 				</div>
 				<div id='adaptive-show' className='callout'>
@@ -20,32 +21,42 @@ export function Portfolio({ lang }: { width: number; lang: TTranslation }) {
 			</div>
 			<div className={`${styles['portfolio__block']} `}>
 				<div className={styles.title}>
-					<img src={nft} alt='' />
+					<img src={nft} alt='nft site logo' />
 					<h5>NFT-Marketplace-Landing</h5>
 				</div>
 				<Gallery projectName='nft' />
 				{/* <a href='https://github.com/1mrasts/Nft-Marketplace-Landing'>
-					<img src={nft_image_big} alt='' />
+					<img src={nft_image_big} alt='NFT marketplace interface preview' />
 				</a> */}
 			</div>
 			<div className={styles['portfolio__block']}>
 				<div className={styles.title}>
-					<img src={payday} alt='' />
+					<img src={payday} alt='payday site logo' />
 					<h5>Payday-App</h5>
 				</div>
 				<Gallery projectName='payday-app' />
 				{/* <a href='https://github.com/1mrasts/Payday-App'>
-					<img src={payday_image_big} alt='' />
+					<img src={payday_image_big} alt='Payday work-time tracker interface preview' />
 				</a> */}
 			</div>
 			<div className={styles['portfolio__block']}>
 				<div className={styles.title}>
-					<img src={todo} alt='' />
+					<img src={todo} alt='todo site logo' />
 					<h5>Todo-App-With-Redux</h5>
 				</div>
 				<Gallery projectName='todo-app' />
 				{/* <a href='https://github.com/1mrasts/Todo-App-with-Redux'>
-					<img src={todo_image_big} alt='' />
+					<img src={todo_image_big} alt='Todo application interface preview' />
+				</a> */}
+			</div>
+			<div className={styles['portfolio__block']}>
+				<div className={styles.title}>
+					<img src={sertexity} alt='sertexity site logo' />
+					<h5>Sertexity site</h5>
+				</div>
+				<Gallery projectName='sertexity' />
+				{/* <a href='https://github.com/1mrasts/Todo-App-with-Redux'>
+					<img src={todo_image_big} alt='Todo application interface preview' />
 				</a> */}
 			</div>
 		</div>
