@@ -5,16 +5,17 @@
 	"type": "module",
 	"scripts": {
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist",
-		"dev": "vite",
-		"build": "tsc -b && vite build",
+		"deploy": "gh-pages -d dist/client --nojekyll",
+		"dev": "vike dev",
+		"build": "tsc -b && vike build",
 		"lint": "eslint .",
-		"preview": "vite preview"
+		"preview": "vike preview"
 	},
 	"dependencies": {
 		"react": "^19.2.4",
 		"react-dom": "^19.2.4",
-		"scss": "^0.2.4"
+		"vike": "^0.4.260",
+		"vike-react": "^0.6.25"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.39.4",

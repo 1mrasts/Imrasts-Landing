@@ -20,8 +20,17 @@ function App() {
 	}
 	const [lang, setLang] = useState<'en' | 'ru'>('en')
 
-	const [width, setWidth] = useState(window.innerWidth)
+	const [width, setWidth] = useState<number>(1440)
 	const observer = useRef<IntersectionObserver | null>(null) // Постоянно держим observer
+
+	useEffect(() => {
+		const updateWidth = () => setWidth(window.innerWidth)
+
+		updateWidth()
+		window.addEventListener('resize', updateWidth)
+
+		return () => window.removeEventListener('resize', updateWidth)
+	}, [])
 
 	// Следим за элементами с классом .observe и добавляем им .visible при появлении на экране
 	useEffect(() => {
@@ -47,13 +56,6 @@ function App() {
 			observer.current?.disconnect() // При размонтировании компонента отключаем observer, чтобы не было утечек памяти
 		}
 	}, [])
-
-	// Обновление ширины экрана (SSR)
-	useEffect(() => {
-		const handler = () => setWidth(window.innerWidth) // Функция для обновления параметра ширины экрана
-		window.addEventListener('resize', handler) // Навешиваем resize на весь window и обновляем ширину экрана
-		return () => window.removeEventListener('resize', handler)
-	})
 
 	return (
 		<>
