@@ -48,6 +48,18 @@
 	"nft": "NFT-Marketplace-Landing",
 	"payday": "Payday-App",
 	"todo": "Todo-App-With-Redux",
+	"sertexity": "Сайт Sertexity",
+
+	"project_screenshot": "Скриншот проекта",
+	"screen": "экран",
+	"of": "из",
+	"previous_slide": "Показать предыдущий слайд",
+	"next_slide": "Показать следующий слайд",
+	"go_to_slide": "Перейти к слайду",
+	"open_telegram": "Открыть профиль Imrasts в Telegram",
+	"open_github": "Открыть профиль Imrasts на GitHub",
+	"send_email": "Написать Imrasts по электронной почте",
+	"send_telegram": "Написать Imrasts в Telegram",
 
 	"contacts": "Контакты",
 
