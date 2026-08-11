@@ -26,13 +26,13 @@ export function Language({
 					onClick={() => setLang('ru')}
 					className={styles['language__option']}
 				>
-					<h6>RU</h6>
+					<span className={styles['language__label']}>RU</span>
 				</div>
 				<div
 					onClick={() => setLang('en')}
 					className={styles['language__option']}
 				>
-					<h6>EN</h6>
+					<span className={styles['language__label']}>EN</span>
 				</div>
 			</div>
 		</div>

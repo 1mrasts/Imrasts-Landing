@@ -1,6 +1,6 @@
 import type { TTranslation } from '../../App'
-import abstractBig from '../../assets/Contacts/Abstract-big.png'
-import abstract from '../../assets/Contacts/Abstract.png'
+import abstractBig from '../../assets/Contacts/Abstract-big.webp'
+import abstract from '../../assets/Contacts/Abstract.webp'
 import contacts from '../../assets/Contacts/contacts.svg'
 import github from '../../assets/Contacts/github.svg'
 import mailru from '../../assets/Contacts/mailru.svg'
@@ -20,26 +20,30 @@ export function Contacts({
 				<div className='card card-horiz'>
 					<div className='card-title'>
 						<div className='card-logo'>
-							<img src={contacts} alt='Mobile contact icon' />
+							<img loading='lazy' src={contacts} alt='' />
 						</div>
-						<h5>{lang.contacts}</h5>
+						<h2 className='contact-heading'>{lang.contacts}</h2>
 					</div>
 					<div className={styles['contacts__list']}>
-						<a href='https://t.me/Imrasts'>
-							<img src={telegram} alt='Telegram logo' />
+						<a href='https://t.me/Imrasts' aria-label={lang.open_telegram}>
+							<img loading='lazy' src={telegram} alt='' />
 						</a>
-						<a href='https://github.com/1mrasts'>
-							<img src={github} alt='GitHub logo' />
+						<a href='https://github.com/1mrasts' aria-label={lang.open_github}>
+							<img loading='lazy' src={github} alt='' />
 						</a>
-						<a href='mailto:imrasts.mail@gmail.com?subject=Заказ'>
-							<img src={mailru} alt='Email icon' />
+						<a
+							href='mailto:imrasts.mail@gmail.com?subject=Заказ'
+							aria-label={lang.send_email}
+						>
+							<img loading='lazy' src={mailru} alt='' />
 						</a>
 					</div>
 				</div>
 				<img
+					loading='lazy'
 					className={styles['abstract']}
 					src={width < 1100 ? abstract : abstractBig}
-					alt='Abstract composition of blue and dark circles'
+					alt=''
 				/>
 			</div>
 		</div>

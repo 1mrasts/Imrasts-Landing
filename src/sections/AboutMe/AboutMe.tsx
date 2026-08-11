@@ -9,8 +9,8 @@ export function AboutMe({ lang }: { lang: TTranslation }) {
 	return (
 		<div className={`${styles.aboutme} mt-150`}>
 			<div className='title'>
-				<img src={accessibility} alt='person logo' />
-				<h4>{lang.about}</h4>
+				<img loading='lazy' src={accessibility} alt='' />
+				<h2 className='section-heading'>{lang.about}</h2>
 			</div>
 			<div id='adaptive-show' className='callout'>
 				<p>{lang.phrase_about_me}</p>
@@ -19,9 +19,13 @@ export function AboutMe({ lang }: { lang: TTranslation }) {
 				<div className='card card--big'>
 					<div className='card-title'>
 						<div className='card-logo'>
-							<img src={upload_file} alt='website development logo' />
+							<img
+								loading='lazy'
+								src={upload_file}
+								alt=''
+							/>
 						</div>
-						<h5>{lang.website_development}</h5>
+						<h3 className='card-heading'>{lang.website_development}</h3>
 					</div>
 					<div className='card-hr_title'></div>
 					<ul>
@@ -38,7 +42,7 @@ export function AboutMe({ lang }: { lang: TTranslation }) {
 							<p>{lang.wd_fourth}</p>
 						</li>
 					</ul>
-					<h6>{lang.frontend_experience}</h6>
+					<h3 className='card-subheading'>{lang.frontend_experience}</h3>
 					<div className='card-hr'></div>
 					<ul>
 						<li>
@@ -58,9 +62,9 @@ export function AboutMe({ lang }: { lang: TTranslation }) {
 				<div className='card'>
 					<div className='card-title'>
 						<div className='card-logo'>
-							<img src={settings} alt='performance logo' />
+							<img loading='lazy' src={settings} alt='' />
 						</div>
-						<h5>{lang.performance_and_optimization}</h5>
+						<h3 className='card-heading'>{lang.performance_and_optimization}</h3>
 					</div>
 					<div className='card-hr_title'></div>
 					<ul>
@@ -81,9 +85,9 @@ export function AboutMe({ lang }: { lang: TTranslation }) {
 				<div className='card'>
 					<div className='card-title'>
 						<div className='card-logo'>
-							<img src={replay} alt='interactive logo' />
+							<img loading='lazy' src={replay} alt='' />
 						</div>
-						<h5>{lang.interactive_experience}</h5>
+						<h3 className='card-heading'>{lang.interactive_experience}</h3>
 					</div>
 					<div className='card-hr_title'></div>
 					<ul>

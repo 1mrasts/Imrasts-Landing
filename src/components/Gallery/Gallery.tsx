@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import type { TTranslation } from '../../App'
 import { gallery } from '../../assets/data/gallery'
 import arrowNext from '../../assets/Portfolio/Gallery/arrow-next.svg'
 import arrowPrev from '../../assets/Portfolio/Gallery/arrow-prev.svg'
@@ -7,10 +8,18 @@ import styles from './Gallery.module.scss'
 
 export function Gallery({
 	projectName,
+	lang,
 }: {
 	projectName: 'nft' | 'payday-app' | 'todo-app' | 'sertexity'
+	lang: TTranslation
 }) {
 	const galleryData: galleryInfoType = gallery[projectName]
+	const projectLabel = {
+		nft: lang.nft,
+		'payday-app': lang.payday,
+		'todo-app': lang.todo,
+		sertexity: lang.sertexity,
+	}[projectName]
 	const [currentSlide, setCurrentSlide] = useState<number>(0)
 	const total = galleryData.urls.length
 	// Функция для перехода к предыдущему слайду (стрелка "назад")
@@ -44,13 +53,23 @@ export function Gallery({
 			<div className={styles.viewport}>
 				<div className={styles.track} style={trackStyle}>
 					{galleryData.urls.map((item, index) => (
-						<img key={index} className={styles['track__slide']} src={item} />
+						<img
+							loading='lazy'
+							key={index}
+							className={styles['track__slide']}
+							src={item}
+							alt={`${lang.project_screenshot}: ${projectLabel}, ${lang.screen} ${index + 1} ${lang.of} ${total}`}
+						/>
 					))}
 				</div>
 			</div>
 			<div className={styles.btns}>
-				<button className={styles['btn']} onClick={prevSlide}>
-					<img src={arrowPrev} />
+				<button
+					className={styles['btn']}
+					onClick={prevSlide}
+					aria-label={lang.previous_slide}
+				>
+					<img loading='lazy' src={arrowPrev} alt='' />
 				</button>
 				<div className={`${styles.indicators}`} id='adaptive-show'>
 					{galleryData.urls.map((_, index) => (
@@ -59,11 +78,16 @@ export function Gallery({
 							id='adaptive-show'
 							className={`${styles['indicator']} ${index === currentSlide ? styles['indicator--active'] : ''}`}
 							onClick={() => setCurrentSlide(index)}
+							aria-label={`${lang.go_to_slide} ${index + 1}`}
 						/>
 					))}
 				</div>
-				<button className={styles['btn']} onClick={nextSlide}>
-					<img src={arrowNext} />
+				<button
+					className={styles['btn']}
+					onClick={nextSlide}
+					aria-label={lang.next_slide}
+				>
+					<img loading='lazy' src={arrowNext} alt='' />
 				</button>
 			</div>
 		</div>

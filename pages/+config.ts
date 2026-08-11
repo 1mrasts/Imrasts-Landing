@@ -4,8 +4,8 @@ import type { Config } from 'vike/types'
 export default {
 	extends: [vikeReact],
 	prerender: true,
-	title: 'Hi! | Imrasts Landing',
+	title: 'Imrasts — Веб-разработчик | React, TypeScript',
 	description:
-		'Frontend-разработчик Imrasts. Создаю современные, быстрые и удобные веб-сайты и приложения.',
-	lang: 'en',
+		'Frontend-разработчик Imrasts. Создаю современные, адаптивные, быстрые и удобные веб-сайты под любые устройства с любым функционалом.',
+	lang: 'ru',
 } satisfies Config

@@ -8,8 +8,8 @@ export function TechStack({ lang }: { lang: TTranslation }) {
 	return (
 		<div className={`${styles.techstack}`}>
 			<div className='title'>
-				<img src={engineering} alt='Engineer with gears' />
-				<h4>{lang.tech_stack}</h4>
+				<img loading='lazy' src={engineering} alt='' />
+				<h2 className='section-heading'>{lang.tech_stack}</h2>
 			</div>
 			<div id='adaptive-show' className='callout'>
 				<p>{lang.phrase_tech_stack}</p>
@@ -18,9 +18,9 @@ export function TechStack({ lang }: { lang: TTranslation }) {
 				<div className='card'>
 					<div className='card-title'>
 						<div className='card-logo'>
-							<img src={web} alt='Website interface layout' />
+							<img loading='lazy' src={web} alt='' />
 						</div>
-						<h5>{lang.interfaces}</h5>
+						<h3 className='card-heading'>{lang.interfaces}</h3>
 					</div>
 					<div className='card-hr_title'></div>
 					<ul>
@@ -41,9 +41,9 @@ export function TechStack({ lang }: { lang: TTranslation }) {
 				<div className='card'>
 					<div className='card-title'>
 						<div className='card-logo'>
-							<img src={tools} alt='Pencil tool' />
+							<img loading='lazy' src={tools} alt='' />
 						</div>
-						<h5>{lang.tools}</h5>
+						<h3 className='card-heading'>{lang.tools}</h3>
 					</div>
 					<div className='card-hr_title'></div>
 					<ul>

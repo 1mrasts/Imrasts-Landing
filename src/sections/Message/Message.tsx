@@ -41,7 +41,7 @@ export function Message({ lang }: { lang: TTranslation }) {
 		}
 	}, [textMessage])
 	return (
-		<section className={`${styles.chat} mt-150`}>
+		<article className={`${styles.chat} mt-150`}>
 			<div className={`${styles['chat__block']} card`}>
 				<div
 					className={
@@ -61,10 +61,10 @@ export function Message({ lang }: { lang: TTranslation }) {
 						onClick={() => window.open('https://t.me/Imrasts', '_blank')}
 						className={`${styles['chat__button']}`}
 					>
-						<img src={send} alt='Send message via Telegram' />
+						<img loading='lazy' src={send} alt={lang.send_telegram} />
 					</div>
 				</div>
 			</div>
-		</section>
+		</article>
 	)
 }

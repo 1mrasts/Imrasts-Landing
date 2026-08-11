@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import abstractBig from './assets/abstract-1-big.png'
-import abstract from './assets/abstract-1.png'
+import abstractBig from './assets/abstract-1-big.webp'
+import abstract from './assets/abstract-1.webp'
 import en from './assets/data/en.json'
 import ru from './assets/data/ru.json'
 import { Language } from './components/Language/Language'
@@ -18,7 +18,7 @@ function App() {
 		en,
 		ru,
 	}
-	const [lang, setLang] = useState<'en' | 'ru'>('en')
+	const [lang, setLang] = useState<'en' | 'ru'>('ru')
 
 	const [width, setWidth] = useState<number>(1440)
 	const observer = useRef<IntersectionObserver | null>(null) // Постоянно держим observer
@@ -58,19 +58,20 @@ function App() {
 	}, [])
 
 	return (
-		<>
+		<main>
 			<Language width={width} lang={lang} setLang={setLang} />
-			<section className='observe'>
+			<header className='observe'>
 				<Hero width={width} lang={translations[lang]} typeOfLang={lang} />
-			</section>
+			</header>
 			<section className='observe'>
 				<AboutMe lang={translations[lang]} />
 			</section>
 			<section className='observe'>
 				<img
+					loading='lazy'
 					className='abstract'
 					src={width < 1100 ? abstract : abstractBig}
-					alt='abstraction'
+					alt=''
 				/>
 			</section>
 			<section className='observe'>
@@ -82,10 +83,10 @@ function App() {
 			<section className='observe'>
 				<Message lang={translations[lang]} />
 			</section>
-			<section className='observe'>
+			<footer className='observe'>
 				<Contacts width={width} lang={translations[lang]} />
-			</section>
-		</>
+			</footer>
+		</main>
 	)
 }
 

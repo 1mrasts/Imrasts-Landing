@@ -1,6 +1,6 @@
 import type { TTranslation } from '../../App'
-import abstract from '../../assets/Hero/abstract.png'
-import abstract2 from '../../assets/Hero/developer.png'
+import abstract from '../../assets/Hero/abstract.webp'
+import abstract2 from '../../assets/Hero/developer.webp'
 import link from '../../assets/Hero/hi.svg'
 import styles from './Hero.module.scss'
 
@@ -16,24 +16,27 @@ export function Hero({
 	return (
 		<div className={`${styles.hero} mt-150`}>
 			<div className={styles.title}>
-				<h2>{lang.hi}</h2>
-				<img src={link} alt='Arrow pointing up and to the right' />
+				<p className={styles.greeting}>{lang.hi}</p>
+				<img src={link} alt='' />
 			</div>
-			<h5>
+			<p className={styles.intro}>
 				{lang.i} <span>{lang.nickname}</span>
-			</h5>
-			<h2>{lang.frontend}</h2>
-			<h1>{lang.developer}</h1>
+			</p>
+			<h1 className={styles.headline}>
+				<span className={styles['headline__context']}>{lang.frontend}</span>
+				<span className={styles['headline__primary']}>{lang.developer}</span>
+			</h1>
 			<img
 				className={styles.developer}
 				id='adaptive-show'
 				src={abstract2}
-				alt='Abstract dark circular shape'
+				alt=''
 			/>
 			<img
 				className={styles.abstract}
 				src={abstract}
-				alt='Abstract composition of blue and dark circles'
+				alt=''
+				fetchPriority='high'
 				style={{
 					transform: `rotate(${typeOfLang == 'ru' ? '240deg' : '220deg'})`,
 					bottom: `${typeOfLang == 'ru' ? '70px' : '100px'}`,

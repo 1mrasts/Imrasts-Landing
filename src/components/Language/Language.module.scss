@@ -32,6 +32,12 @@
 		transition: all 0.5s;
 	}
 }
-.language h6 {
+.language__label {
+	color: #ffffff;
+	font-size: 16px;
 	font-weight: 800;
+
+	@media (min-width: 1000px) {
+		font-size: 24px !important;
+	}
 }
